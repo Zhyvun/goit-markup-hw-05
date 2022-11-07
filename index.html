@@ -48,7 +48,7 @@
     <section class="hero picture">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="primary-button" type="button">Замовити послугу</button>
+        <button class="primary-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="section">
@@ -109,15 +109,25 @@
         <h2 class="heading">Чим ми займаємося</h2>
         <ul class="heading-list">
           <li>
-            <img src="./images/bodsec-01-0301.jpg" alt="Написання програмних модулів на клавіатурі" width="370" />
+            <div class="heading-content">
+              <img src="./images/bodsec-01-0301.jpg" alt="Написання програмних модулів на клавіатурі" width="370" />
+              <p class="heading-label">Десктопні додатки</p>
+            </div>
           </li>
           <li>
-            <img src="./images/bodsec-01-0302.jpg" alt="Створення контенту для мобільних гаджетів" width="370" />
+            <div class="heading-content">
+              <img src="./images/bodsec-01-0302.jpg" alt="Створення контенту для мобільних гаджетів" width="370" />
+              <p class="heading-label">Мобільні додатки</p>
+            </div>
           </li>
           <li>
-            <img src="./images/bodsec-01-0303.jpg" alt="Розробка дизайну за допомогою планшету" width="370" />
+            <div class="heading-content">
+              <img src="./images/bodsec-01-0303.jpg" alt="Розробка дизайну за допомогою планшету" width="370" />
+              <p class="heading-label">Дизайнерські рішення</p>
+            </div>
           </li>
-        </ul>
+      </div>
+      </ul>
       </div>
     </section>
     <section class="section team-body">
@@ -386,6 +396,19 @@
       </div>
     </div>
   </footer>
+  <!--MODAL WINDOW-->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <h2>Lorem </h2>
+      <p>Lorem ipsum </p>
+      <button class="modal-close-button" type="button" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
